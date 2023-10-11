@@ -10,6 +10,10 @@ app.get("/",(req,res) => {
     res.send("Hello from AWS Abishek Node APP");
 })
 
+app.get("/hello",(req,res)=>{
+    res.send("/hello route");
+})
+
 app.listen(9000, () => {
     console.log("Server started ....");
 })
