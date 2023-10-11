@@ -8,12 +8,8 @@ app.use(cors());
 app.get("/",(req,res) => {
     console.log("Hello from AWS Abishek Node APP");
     res.send("Hello from AWS Abishek Node APP");
-})
-
-app.get("/hello",(req,res)=>{
-    res.send("/hello route");
-})
+});
 
 app.listen(9000, () => {
     console.log("Server started ....");
-})
+});
